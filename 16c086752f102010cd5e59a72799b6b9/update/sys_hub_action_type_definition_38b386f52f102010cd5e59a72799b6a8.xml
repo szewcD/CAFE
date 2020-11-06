@@ -1,0 +1,3813 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation>Update Service Catalog Variable</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p style='margin-top: 10px; font-family: Helvetica neue, roboto '&gt;This custom action allows users to quickly and easily update any Catalog Item's Variable. It enables no-code approach as actions require only 3 mandatory input arguments from the user. User must only know what should be updated and where.&lt;br /&gt;&lt;br /&gt;
+If a variable is of any type that requires display value in the notes a user can provide additional information on where to look for this value. &lt;/p&gt;
+&lt;p style='margin-top: 10px; font-family: Helvetica neue, roboto'&gt;
+&lt;b&gt;Input required:&lt;/b&gt;&lt;br/&gt;
+&lt;ul style='font-style: italic; font-family: Helvetica neue, roboto'&gt;
+&lt;li&gt;Requested Item's number&lt;/li&gt;
+&lt;li&gt;Name of the Service Catalog Variable to be updated&lt;/li&gt;
+&lt;li&gt;New value&lt;/li&gt;
+&lt;li&gt;Information if value of variable is a reference&lt;i&gt;(set to false if not reference, optional parameter)&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;Referenced table &lt;i&gt;(only required if value requires reference, optional parameter)&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+        <ih_action>false</ih_action>
+        <internal_name>update_service_catalog_variable</internal_name>
+        <label_cache>[{"name":"{{action.requested_item}}","label":"action➛Requested Item","type":"action","ref":""},{"name":"{{action.variable_name}}","label":"action➛Variable Name (not Label / Question)","type":"action","ref":""},{"name":"{{action.new_value}}","label":"action➛New Value","type":"action","ref":""},{"name":"{{action.requires_reference}}","label":"action➛Requires Reference","type":"action","ref":""},{"name":"{{action.reference_table}}","label":"action➛Reference Table","type":"action","ref":""},{"name":"{{action.reference_table_name}}","label":"action➛Reference Table Name","type":"action","ref":""}]</label_cache>
+        <latest_snapshot>c6dd82712f502010cd5e59a72799b670</latest_snapshot>
+        <master_snapshot>c43dc6312f502010cd5e59a72799b696</master_snapshot>
+        <name>Update Service Catalog Variable</name>
+        <natlang/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:41:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>38b386f52f102010cd5e59a72799b6a8</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Update Service Catalog Variable</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_38b386f52f102010cd5e59a72799b6a8</sys_update_name>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:25:35</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=38b386f52f102010cd5e59a72799b6a8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=38b386f52f102010cd5e59a72799b6a8"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=38b386f52f102010cd5e59a72799b6a8^sys_idNOT INf5b742f92f102010cd5e59a72799b6a5"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Update Service Catalog Variable">38b386f52f102010cd5e59a72799b6a8</action>
+        <cid>6bc2c3ac-ef0e-4260-9640-e6f2134b2f28</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Update Service Catalog Variable</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:46</sys_created_on>
+        <sys_id>f5b742f92f102010cd5e59a72799b6a5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:21:55</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f5b742f92f102010cd5e59a72799b6a5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>78290e3d2f102010cd5e59a72799b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <value/>
+        <variable display_value="">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>b1b742f92f102010cd5e59a72799b6d4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:21:20</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  
+  var oldValue; // variable to keep old value
+  var newValue; // variable to keep new value
+  var variableLabel = inputs['ritm'].variables[inputs['variableName']].getLabel() + ''; // get variable's lable to be used in work notes
+  
+  // check if isReferenced parameter is not null or false, if any condition returns true then value is a simple one e.g. string
+  if (gs.nil(inputs['isReferenced']) || inputs['isReferenced'] == 'false' || inputs['isReferenced'] == false) {
+    
+    oldValue = inputs['ritm'].variables[inputs['variableName']] + ''; // set old value of variable, used "+ ''" to break reference
+    newValue = inputs['newValue'] + ''; // set new value varaible, used "+ ''" to break reference
+  	
+  } else {
+  	
+    // verify that referenced table was provided
+    if (!gs.nil(inputs['referenceTable'])) {
+    
+      oldValue = getValue(inputs['referenceTable'],inputs['ritm'].variables[inputs['variableName']]) + ''; // set old value of variable, used "+ ''" to break reference
+      newValue = getValue(inputs['referenceTable'],inputs['newValue']) + ''; // set new value varaible, used "+ ''" to break reference
+    
+    }
+    
+  }
+  
+  inputs['ritm'].variables[inputs['variableName']] = inputs['newValue']; // set new value for variable on RITM
+  inputs['ritm'].work_notes = 'Value of ' + variableLabel + ' has been changed from "' + oldValue + '" to "' + newValue + '"'; // add work notes with the change
+  inputs['ritm'].update(); // update RITM
+  
+  
+  /**
+  	*
+  	* @function getValue
+    * @description Gets display value of a record.
+    * @param {string} table name	-	name of table where record can be found
+    * @param {string} sys_id		-	sys_id of record
+    * @return {string|null} string with value or null if not found
+    *
+    **/
+  function getValue(tableName,sys_id) {
+    
+    var gr = new GlideRecord(tableName); // glideRecord to pointed table
+    var result = gr.get(sys_id); // get record
+    
+    // verify if record was found
+    if (result) {
+    
+      return gr.getDisplayValue(); // return display value
+    
+    } 
+    
+    return; // return null
+  
+  }
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>b1b742f92f102010cd5e59a72799b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">fdb742f92f102010cd5e59a72799b6b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>b4290e3d2f102010cd5e59a72799b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <value/>
+        <variable display_value="">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>f0290e3d2f102010cd5e59a72799b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <value/>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f5b742f92f102010cd5e59a72799b6a5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>78290e3d2f102010cd5e59a72799b690</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>isReferenced</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>b9b742f92f102010cd5e59a72799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.requires_reference}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>fc290e3d2f102010cd5e59a72799b690</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>newValue</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>35b742f92f102010cd5e59a72799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.new_value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>referenceTable</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>31b742f92f102010cd5e59a72799b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.reference_table_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>required_run_time</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>3c290e3d2f102010cd5e59a72799b690</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>7db742f92f102010cd5e59a72799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>b9b742f92f102010cd5e59a72799b6d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variableName</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>f5b742f92f102010cd5e59a72799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.variable_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f5b742f92f102010cd5e59a72799b6a5^sys_idNOT IN39b742f92f102010cd5e59a72799b6ab,f5b742f92f102010cd5e59a72799b6b5,f5b742f92f102010cd5e59a72799b6be,fdb742f92f102010cd5e59a72799b6b0,fdb742f92f102010cd5e59a72799b6b9"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:46</sys_created_on>
+        <sys_id>39b742f92f102010cd5e59a72799b6ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>newValue</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>f5b742f92f102010cd5e59a72799b6b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>referenceTable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>f5b742f92f102010cd5e59a72799b6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variableName</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>fdb742f92f102010cd5e59a72799b6b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>isReferenced</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>fdb742f92f102010cd5e59a72799b6b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="delete_multiple" query="model=38b386f52f102010cd5e59a72799b6a8^sys_idNOT IN18e44e392f102010cd5e59a72799b698,591542792f102010cd5e59a72799b620,7364c6392f102010cd5e59a72799b650,c074c6392f102010cd5e59a72799b656,ff64c6392f102010cd5e59a72799b649"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=14c9ab7e-3075-4976-af85-1300d791697d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Variable Name (not Label / Question)</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">38b386f52f102010cd5e59a72799b6a8</model>
+        <model_id>38b386f52f102010cd5e59a72799b6a8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:46:23</sys_created_on>
+        <sys_id>18e44e392f102010cd5e59a72799b698</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:47:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=eca25a03-6412-4b27-8d03-d59228f6fa17</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requested_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Requested Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update Service Catalog Variable">38b386f52f102010cd5e59a72799b6a8</model>
+        <model_id>38b386f52f102010cd5e59a72799b6a8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:47:17</sys_created_on>
+        <sys_id>591542792f102010cd5e59a72799b620</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:47:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=861a15d2-fe9d-4f2e-9ce8-fed35cb99cff</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requires_reference</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Requires Reference</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Update Service Catalog Variable">38b386f52f102010cd5e59a72799b6a8</model>
+        <model_id>38b386f52f102010cd5e59a72799b6a8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:44:27</sys_created_on>
+        <sys_id>7364c6392f102010cd5e59a72799b650</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:47:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=615a8230-b9a6-4930-8c2a-9801c216a611</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reference_table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Reference Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">38b386f52f102010cd5e59a72799b6a8</model>
+        <model_id>38b386f52f102010cd5e59a72799b6a8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:44:27</sys_created_on>
+        <sys_id>c074c6392f102010cd5e59a72799b656</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:47:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d5fdff01-e3ec-429a-bbf2-c15b1e2f18eb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_value</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>New Value</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">38b386f52f102010cd5e59a72799b6a8</model>
+        <model_id>38b386f52f102010cd5e59a72799b6a8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:44:27</sys_created_on>
+        <sys_id>ff64c6392f102010cd5e59a72799b649</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:47:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_step_instance action="delete_multiple" query="action=38b386f52f102010cd5e59a72799b6a8^sys_idNOT INf5b742f92f102010cd5e59a72799b6a5"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Update Service Catalog Variable">38b386f52f102010cd5e59a72799b6a8</action>
+        <cid>6bc2c3ac-ef0e-4260-9640-e6f2134b2f28</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Update Service Catalog Variable</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:46</sys_created_on>
+        <sys_id>f5b742f92f102010cd5e59a72799b6a5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:21:55</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f5b742f92f102010cd5e59a72799b6a5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>78290e3d2f102010cd5e59a72799b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <value/>
+        <variable display_value="">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>b1b742f92f102010cd5e59a72799b6d4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:21:20</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  
+  var oldValue; // variable to keep old value
+  var newValue; // variable to keep new value
+  var variableLabel = inputs['ritm'].variables[inputs['variableName']].getLabel() + ''; // get variable's lable to be used in work notes
+  
+  // check if isReferenced parameter is not null or false, if any condition returns true then value is a simple one e.g. string
+  if (gs.nil(inputs['isReferenced']) || inputs['isReferenced'] == 'false' || inputs['isReferenced'] == false) {
+    
+    oldValue = inputs['ritm'].variables[inputs['variableName']] + ''; // set old value of variable, used "+ ''" to break reference
+    newValue = inputs['newValue'] + ''; // set new value varaible, used "+ ''" to break reference
+  	
+  } else {
+  	
+    // verify that referenced table was provided
+    if (!gs.nil(inputs['referenceTable'])) {
+    
+      oldValue = getValue(inputs['referenceTable'],inputs['ritm'].variables[inputs['variableName']]) + ''; // set old value of variable, used "+ ''" to break reference
+      newValue = getValue(inputs['referenceTable'],inputs['newValue']) + ''; // set new value varaible, used "+ ''" to break reference
+    
+    }
+    
+  }
+  
+  inputs['ritm'].variables[inputs['variableName']] = inputs['newValue']; // set new value for variable on RITM
+  inputs['ritm'].work_notes = 'Value of ' + variableLabel + ' has been changed from "' + oldValue + '" to "' + newValue + '"'; // add work notes with the change
+  inputs['ritm'].update(); // update RITM
+  
+  
+  /**
+  	*
+  	* @function getValue
+    * @description Gets display value of a record.
+    * @param {string} table name	-	name of table where record can be found
+    * @param {string} sys_id		-	sys_id of record
+    * @return {string|null} string with value or null if not found
+    *
+    **/
+  function getValue(tableName,sys_id) {
+    
+    var gr = new GlideRecord(tableName); // glideRecord to pointed table
+    var result = gr.get(sys_id); // get record
+    
+    // verify if record was found
+    if (result) {
+    
+      return gr.getDisplayValue(); // return display value
+    
+    } 
+    
+    return; // return null
+  
+  }
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>b1b742f92f102010cd5e59a72799b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">fdb742f92f102010cd5e59a72799b6b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>b4290e3d2f102010cd5e59a72799b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <value/>
+        <variable display_value="">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5b742f92f102010cd5e59a72799b6a5</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>f0290e3d2f102010cd5e59a72799b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <value/>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f5b742f92f102010cd5e59a72799b6a5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>78290e3d2f102010cd5e59a72799b690</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>isReferenced</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>b9b742f92f102010cd5e59a72799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.requires_reference}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>fc290e3d2f102010cd5e59a72799b690</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>newValue</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>35b742f92f102010cd5e59a72799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.new_value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>referenceTable</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>31b742f92f102010cd5e59a72799b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.reference_table_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>required_run_time</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:04:59</sys_created_on>
+        <sys_id>3c290e3d2f102010cd5e59a72799b690</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>7db742f92f102010cd5e59a72799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>b9b742f92f102010cd5e59a72799b6d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variableName</field>
+        <id>f5b742f92f102010cd5e59a72799b6a5</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>f5b742f92f102010cd5e59a72799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</table>
+        <value>{{action.variable_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f5b742f92f102010cd5e59a72799b6a5^sys_idNOT IN39b742f92f102010cd5e59a72799b6ab,f5b742f92f102010cd5e59a72799b6b5,f5b742f92f102010cd5e59a72799b6be,fdb742f92f102010cd5e59a72799b6b0,fdb742f92f102010cd5e59a72799b6b9"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:46</sys_created_on>
+        <sys_id>39b742f92f102010cd5e59a72799b6ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:04:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>newValue</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>f5b742f92f102010cd5e59a72799b6b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>referenceTable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>f5b742f92f102010cd5e59a72799b6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variableName</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>fdb742f92f102010cd5e59a72799b6b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>isReferenced</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Update Service Catalog Variable">f5b742f92f102010cd5e59a72799b6a5</model>
+        <model_id>f5b742f92f102010cd5e59a72799b6a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f5b742f92f102010cd5e59a72799b6a5</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:58:47</sys_created_on>
+        <sys_id>fdb742f92f102010cd5e59a72799b6b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8^sys_idNOT IN4c74c6392f102010cd5e59a72799b654,90e44e392f102010cd5e59a72799b6ad,cc74c6392f102010cd5e59a72799b65a,e11542792f102010cd5e59a72799b628,fb64c6392f102010cd5e59a72799b64e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requires_reference</element>
+        <help/>
+        <hint/>
+        <label>Requires Reference</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:44:27</sys_created_on>
+        <sys_id>4c74c6392f102010cd5e59a72799b654</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:44:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable_name</element>
+        <help/>
+        <hint/>
+        <label>Variable Name (not Label / Question)</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:46:23</sys_created_on>
+        <sys_id>90e44e392f102010cd5e59a72799b6ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:46:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>reference_table_name</element>
+        <help/>
+        <hint/>
+        <label>Reference Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:44:27</sys_created_on>
+        <sys_id>cc74c6392f102010cd5e59a72799b65a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:44:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requested_item</element>
+        <help/>
+        <hint/>
+        <label>Requested Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:47:17</sys_created_on>
+        <sys_id>e11542792f102010cd5e59a72799b628</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:47:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>new_value</element>
+        <help/>
+        <hint/>
+        <label>New Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_38b386f52f102010cd5e59a72799b6a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 09:44:27</sys_created_on>
+        <sys_id>fb64c6392f102010cd5e59a72799b64e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 09:44:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=38b386f52f102010cd5e59a72799b6a8^sys_idNOT INa83d0a312f502010cd5e59a72799b65e"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Update Service Catalog Variable">38b386f52f102010cd5e59a72799b6a8</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a83d0a312f502010cd5e59a72799b65e","name":"plan"}}</plan>
+        <snapshot>c6dd82712f502010cd5e59a72799b670</snapshot>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a83d0a312f502010cd5e59a72799b65e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:25:36</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation>Update Service Catalog Variable</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p style='margin-top: 10px; font-family: Helvetica neue, roboto '&gt;This custom action allows users to quickly and easily update any Catalog Item's Variable. It enables no-code approach as actions require only 3 mandatory input arguments from the user. User must only know what should be updated and where.&lt;br /&gt;&lt;br /&gt;
+If a variable is of any type that requires display value in the notes a user can provide additional information on where to look for this value. &lt;/p&gt;
+&lt;p style='margin-top: 10px; font-family: Helvetica neue, roboto'&gt;
+&lt;b&gt;Input required:&lt;/b&gt;&lt;br/&gt;
+&lt;ul style='font-style: italic; font-family: Helvetica neue, roboto'&gt;
+&lt;li&gt;Requested Item's number&lt;/li&gt;
+&lt;li&gt;Name of the Service Catalog Variable to be updated&lt;/li&gt;
+&lt;li&gt;New value&lt;/li&gt;
+&lt;li&gt;Information if value of variable is a reference&lt;i&gt;(set to false if not reference, optional parameter)&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;Referenced table &lt;i&gt;(only required if value requires reference, optional parameter)&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+        <internal_name>update_service_catalog_variable</internal_name>
+        <label_cache>[{"name":"{{action.requested_item}}","label":"action➛Requested Item","type":"action","ref":""},{"name":"{{action.variable_name}}","label":"action➛Variable Name (not Label / Question)","type":"action","ref":""},{"name":"{{action.new_value}}","label":"action➛New Value","type":"action","ref":""},{"name":"{{action.requires_reference}}","label":"action➛Requires Reference","type":"action","ref":""},{"name":"{{action.reference_table}}","label":"action➛Reference Table","type":"action","ref":""},{"name":"{{action.reference_table_name}}","label":"action➛Reference Table Name","type":"action","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Update Service Catalog Variable</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Update Service Catalog Variable">38b386f52f102010cd5e59a72799b6a8</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c43dc6312f502010cd5e59a72799b696</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:25:34</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c43dc6312f502010cd5e59a72799b696"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c43dc6312f502010cd5e59a72799b696"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=c43dc6312f502010cd5e59a72799b696^sys_idNOT INc83dc6312f502010cd5e59a72799b6d4"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Update Service Catalog Variable">c43dc6312f502010cd5e59a72799b696</action>
+        <cid>6bc2c3ac-ef0e-4260-9640-e6f2134b2f28</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Update Service Catalog Variable</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>c83dc6312f502010cd5e59a72799b6d4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c83dc6312f502010cd5e59a72799b6d4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>083dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value/>
+        <variable display_value="">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>443dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value/>
+        <variable display_value="">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>803dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value/>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>c83dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  
+  var oldValue; // variable to keep old value
+  var newValue; // variable to keep new value
+  var variableLabel = inputs['ritm'].variables[inputs['variableName']].getLabel() + ''; // get variable's lable to be used in work notes
+  
+  // check if isReferenced parameter is not null or false, if any condition returns true then value is a simple one e.g. string
+  if (gs.nil(inputs['isReferenced']) || inputs['isReferenced'] == 'false' || inputs['isReferenced'] == false) {
+    
+    oldValue = inputs['ritm'].variables[inputs['variableName']] + ''; // set old value of variable, used "+ ''" to break reference
+    newValue = inputs['newValue'] + ''; // set new value varaible, used "+ ''" to break reference
+  	
+  } else {
+  	
+    // verify that referenced table was provided
+    if (!gs.nil(inputs['referenceTable'])) {
+    
+      oldValue = getValue(inputs['referenceTable'],inputs['ritm'].variables[inputs['variableName']]) + ''; // set old value of variable, used "+ ''" to break reference
+      newValue = getValue(inputs['referenceTable'],inputs['newValue']) + ''; // set new value varaible, used "+ ''" to break reference
+    
+    }
+    
+  }
+  
+  inputs['ritm'].variables[inputs['variableName']] = inputs['newValue']; // set new value for variable on RITM
+  inputs['ritm'].work_notes = 'Value of ' + variableLabel + ' has been changed from "' + oldValue + '" to "' + newValue + '"'; // add work notes with the change
+  inputs['ritm'].update(); // update RITM
+  
+  
+  /**
+  	*
+  	* @function getValue
+    * @description Gets display value of a record.
+    * @param {string} table name	-	name of table where record can be found
+    * @param {string} sys_id		-	sys_id of record
+    * @return {string|null} string with value or null if not found
+    *
+    **/
+  function getValue(tableName,sys_id) {
+    
+    var gr = new GlideRecord(tableName); // glideRecord to pointed table
+    var result = gr.get(sys_id); // get record
+    
+    // verify if record was found
+    if (result) {
+    
+      return gr.getDisplayValue(); // return display value
+    
+    } 
+    
+    return; // return null
+  
+  }
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>d03dc6312f502010cd5e59a72799b6fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">0c3dc6312f502010cd5e59a72799b6ea</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c83dc6312f502010cd5e59a72799b6d4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>c43dc6312f502010cd5e59a72799b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>isReferenced</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>c83dc6312f502010cd5e59a72799b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.requires_reference}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>4c3dc6312f502010cd5e59a72799b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>newValue</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>443dc6312f502010cd5e59a72799b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.new_value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>referenceTable</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>403dc6312f502010cd5e59a72799b6fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.reference_table_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>required_run_time</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>883dc6312f502010cd5e59a72799b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>8c3dc6312f502010cd5e59a72799b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>003dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variableName</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>083dc6312f502010cd5e59a72799b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.variable_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c83dc6312f502010cd5e59a72799b6d4^sys_idNOT IN083dc6312f502010cd5e59a72799b6de,0c3dc6312f502010cd5e59a72799b6d7,0c3dc6312f502010cd5e59a72799b6ea,883dc6312f502010cd5e59a72799b6e4,8c3dc6312f502010cd5e59a72799b6f0"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variableName</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variableName</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>083dc6312f502010cd5e59a72799b6de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ritm</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>0c3dc6312f502010cd5e59a72799b6d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>isReferenced</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>isReferenced</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>0c3dc6312f502010cd5e59a72799b6ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>newValue</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>newValue</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>883dc6312f502010cd5e59a72799b6e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>referenceTable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>referenceTable</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>8c3dc6312f502010cd5e59a72799b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="delete_multiple" query="model=c43dc6312f502010cd5e59a72799b696^sys_idNOT IN043dc6312f502010cd5e59a72799b6a1,043dc6312f502010cd5e59a72799b6c0,083dc6312f502010cd5e59a72799b697,403dc6312f502010cd5e59a72799b6ba,c43dc6312f502010cd5e59a72799b6a7"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=14c9ab7e-3075-4976-af85-1300d791697d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Variable Name (not Label / Question)</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c43dc6312f502010cd5e59a72799b696</model>
+        <model_id>c43dc6312f502010cd5e59a72799b696</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>043dc6312f502010cd5e59a72799b6a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=615a8230-b9a6-4930-8c2a-9801c216a611</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reference_table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Reference Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c43dc6312f502010cd5e59a72799b696</model>
+        <model_id>c43dc6312f502010cd5e59a72799b696</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>043dc6312f502010cd5e59a72799b6c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=eca25a03-6412-4b27-8d03-d59228f6fa17</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requested_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Requested Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update Service Catalog Variable">c43dc6312f502010cd5e59a72799b696</model>
+        <model_id>c43dc6312f502010cd5e59a72799b696</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>083dc6312f502010cd5e59a72799b697</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=861a15d2-fe9d-4f2e-9ce8-fed35cb99cff</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requires_reference</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Requires Reference</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Update Service Catalog Variable">c43dc6312f502010cd5e59a72799b696</model>
+        <model_id>c43dc6312f502010cd5e59a72799b696</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>403dc6312f502010cd5e59a72799b6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d5fdff01-e3ec-429a-bbf2-c15b1e2f18eb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_value</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>New Value</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c43dc6312f502010cd5e59a72799b696</model>
+        <model_id>c43dc6312f502010cd5e59a72799b696</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>c43dc6312f502010cd5e59a72799b6a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_step_instance action="delete_multiple" query="action=c43dc6312f502010cd5e59a72799b696^sys_idNOT INc83dc6312f502010cd5e59a72799b6d4"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Update Service Catalog Variable">c43dc6312f502010cd5e59a72799b696</action>
+        <cid>6bc2c3ac-ef0e-4260-9640-e6f2134b2f28</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Update Service Catalog Variable</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>c83dc6312f502010cd5e59a72799b6d4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c83dc6312f502010cd5e59a72799b6d4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>083dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value/>
+        <variable display_value="">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>443dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value/>
+        <variable display_value="">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>803dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value/>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>c83dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  
+  var oldValue; // variable to keep old value
+  var newValue; // variable to keep new value
+  var variableLabel = inputs['ritm'].variables[inputs['variableName']].getLabel() + ''; // get variable's lable to be used in work notes
+  
+  // check if isReferenced parameter is not null or false, if any condition returns true then value is a simple one e.g. string
+  if (gs.nil(inputs['isReferenced']) || inputs['isReferenced'] == 'false' || inputs['isReferenced'] == false) {
+    
+    oldValue = inputs['ritm'].variables[inputs['variableName']] + ''; // set old value of variable, used "+ ''" to break reference
+    newValue = inputs['newValue'] + ''; // set new value varaible, used "+ ''" to break reference
+  	
+  } else {
+  	
+    // verify that referenced table was provided
+    if (!gs.nil(inputs['referenceTable'])) {
+    
+      oldValue = getValue(inputs['referenceTable'],inputs['ritm'].variables[inputs['variableName']]) + ''; // set old value of variable, used "+ ''" to break reference
+      newValue = getValue(inputs['referenceTable'],inputs['newValue']) + ''; // set new value varaible, used "+ ''" to break reference
+    
+    }
+    
+  }
+  
+  inputs['ritm'].variables[inputs['variableName']] = inputs['newValue']; // set new value for variable on RITM
+  inputs['ritm'].work_notes = 'Value of ' + variableLabel + ' has been changed from "' + oldValue + '" to "' + newValue + '"'; // add work notes with the change
+  inputs['ritm'].update(); // update RITM
+  
+  
+  /**
+  	*
+  	* @function getValue
+    * @description Gets display value of a record.
+    * @param {string} table name	-	name of table where record can be found
+    * @param {string} sys_id		-	sys_id of record
+    * @return {string|null} string with value or null if not found
+    *
+    **/
+  function getValue(tableName,sys_id) {
+    
+    var gr = new GlideRecord(tableName); // glideRecord to pointed table
+    var result = gr.get(sys_id); // get record
+    
+    // verify if record was found
+    if (result) {
+    
+      return gr.getDisplayValue(); // return display value
+    
+    } 
+    
+    return; // return null
+  
+  }
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c83dc6312f502010cd5e59a72799b6d4</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>d03dc6312f502010cd5e59a72799b6fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">0c3dc6312f502010cd5e59a72799b6ea</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c83dc6312f502010cd5e59a72799b6d4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>c43dc6312f502010cd5e59a72799b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>isReferenced</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>c83dc6312f502010cd5e59a72799b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.requires_reference}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>4c3dc6312f502010cd5e59a72799b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>newValue</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>443dc6312f502010cd5e59a72799b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.new_value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>referenceTable</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>403dc6312f502010cd5e59a72799b6fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.reference_table_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>required_run_time</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>883dc6312f502010cd5e59a72799b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>8c3dc6312f502010cd5e59a72799b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>003dc6312f502010cd5e59a72799b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variableName</field>
+        <id>c83dc6312f502010cd5e59a72799b6d4</id>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:42</sys_created_on>
+        <sys_id>083dc6312f502010cd5e59a72799b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</table>
+        <value>{{action.variable_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c83dc6312f502010cd5e59a72799b6d4^sys_idNOT IN083dc6312f502010cd5e59a72799b6de,0c3dc6312f502010cd5e59a72799b6d7,0c3dc6312f502010cd5e59a72799b6ea,883dc6312f502010cd5e59a72799b6e4,8c3dc6312f502010cd5e59a72799b6f0"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variableName</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variableName</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>083dc6312f502010cd5e59a72799b6de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ritm</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>0c3dc6312f502010cd5e59a72799b6d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>isReferenced</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>isReferenced</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>0c3dc6312f502010cd5e59a72799b6ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>newValue</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>newValue</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>883dc6312f502010cd5e59a72799b6e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>referenceTable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>referenceTable</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Service Catalog Variable">c83dc6312f502010cd5e59a72799b6d4</model>
+        <model_id>c83dc6312f502010cd5e59a72799b6d4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c83dc6312f502010cd5e59a72799b6d4</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>8c3dc6312f502010cd5e59a72799b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696^sys_idNOT IN003dc6312f502010cd5e59a72799b6a6,4c3dc6312f502010cd5e59a72799b69f,4c3dc6312f502010cd5e59a72799b6be,883dc6312f502010cd5e59a72799b6b8,c43dc6312f502010cd5e59a72799b6d1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable_name</element>
+        <help/>
+        <hint/>
+        <label>Variable Name (not Label / Question)</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>003dc6312f502010cd5e59a72799b6a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requested_item</element>
+        <help/>
+        <hint/>
+        <label>Requested Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>4c3dc6312f502010cd5e59a72799b69f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requires_reference</element>
+        <help/>
+        <hint/>
+        <label>Requires Reference</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>4c3dc6312f502010cd5e59a72799b6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>new_value</element>
+        <help/>
+        <hint/>
+        <label>New Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>883dc6312f502010cd5e59a72799b6b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>reference_table_name</element>
+        <help/>
+        <hint/>
+        <label>Reference Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c43dc6312f502010cd5e59a72799b696</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lukasz.bojara</sys_created_by>
+        <sys_created_on>2020-11-06 10:22:41</sys_created_on>
+        <sys_id>c43dc6312f502010cd5e59a72799b6d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CAFE" source="x_356764_cafe">16c086752f102010cd5e59a72799b6b9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CAFE">16c086752f102010cd5e59a72799b6b9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lukasz.bojara</sys_updated_by>
+        <sys_updated_on>2020-11-06 10:22:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
